@@ -17,5 +17,5 @@ def plot_image_grid(images, num_images_per_row=5):
         f.set_figheight(20)
         f.set_figwidth(20)
 
-    plt.savefig(f"./results/natural_image_pca_{MAX_PATCHES}.png")
+    plt.savefig(f"./results/natural_image_pca/{MAX_PATCHES}.png")
     plt.show()

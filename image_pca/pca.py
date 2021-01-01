@@ -5,7 +5,7 @@ from .parameters import *
 
 
 def natural_image_pca():
-    data = load_image_patches('./input/dataset/BSR/BSDS500/data/images/train/')
+    data = load_image_patches('./input/BSR/BSDS500/data/images/train/')
 
     image_pca = PCA(n_components=PCA_COMPONENTS)
     image_pca.fit(data)

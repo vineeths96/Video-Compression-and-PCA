@@ -15,8 +15,8 @@ def load_overlapping_patches(path):
     return image_patches
 
 
-def load_image_patches(path='./input/dataset/BSR/BSDS500/data/images/train/'):
-    # downloadData()
+def load_image_patches(path='./input/BSR/BSDS500/data/images/train/'):
+    downloadData()
     images_path_list = glob.glob(f'{path}/*.jpg')
 
     image_patches = []

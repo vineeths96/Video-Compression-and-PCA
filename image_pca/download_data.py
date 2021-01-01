@@ -23,7 +23,7 @@ def downloadData(dataset_directory="./input/"):
 
             print("Extracting {} into {}".format(file_name, dataset_directory))
             if file_name.endswith("tgz"):
-                tar = tarfile.open(file_name, "r:gz")
+                tar = tarfile.open(file_name, "r:")
                 tar.extractall(path=dataset_directory)
                 tar.close()
             else:

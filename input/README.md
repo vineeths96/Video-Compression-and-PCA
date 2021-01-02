@@ -1,0 +1,1 @@
+### Input for Natural Image PCA will be automatically downloaded to this folder. Input for Video (Image) compression should be copied to this folder.

@@ -3,6 +3,13 @@ from .parameters import *
 
 
 def plot_image_grid(images, num_images_per_row=5):
+    """
+    Plots and saves the images in a grid in sequential order
+    :param images: List of images to be plotted
+    :param num_images_per_row: Number of images to plot in a row
+    :return: None
+    """
+
     component = 0
     num_rows = len(images) // num_images_per_row
     f, ax = plt.subplots(num_rows, num_images_per_row)
@@ -12,7 +19,7 @@ def plot_image_grid(images, num_images_per_row=5):
             component += 1
             ax[i, j].imshow(images[i * num_images_per_row + j])
             ax[i, j].set_title(component)
-            ax[i, j].axis('off')
+            ax[i, j].axis("off")
 
         f.set_figheight(20)
         f.set_figwidth(20)

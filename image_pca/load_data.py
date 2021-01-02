@@ -6,8 +6,13 @@ from .download_data import downloadData
 from .parameters import *
 
 
-
 def load_overlapping_patches(path):
+    """
+    Create MAX_PATCHES overlapping patches from an image
+    :param path: Path to an image
+    :return: Image patches array
+    """
+
     image = cv2.imread(path, cv2.IMREAD_GRAYSCALE)
     image_patches = extract_patches_2d(image=image, patch_size=(PATCH_LEN, PATCH_LEN), max_patches=MAX_PATCHES)
     image_patches = image_patches.reshape(-1, PATCH_LEN * PATCH_LEN)
@@ -15,9 +20,15 @@ def load_overlapping_patches(path):
     return image_patches
 
 
-def load_image_patches(path='./input/BSR/BSDS500/data/images/train/'):
+def load_image_patches(path="./input/BSR/BSDS500/data/images/train/"):
+    """
+    Creates MAX_PATCHES patches from every image in the path and returns it
+    :param path: Directory where images are stored
+    :return: Image patches of all images in the path
+    """
+
     downloadData()
-    images_path_list = glob.glob(f'{path}/*.jpg')
+    images_path_list = glob.glob(f"{path}/*.jpg")
 
     image_patches = []
 

@@ -4,6 +4,12 @@ import requests
 
 
 def downloadData(dataset_directory="./input/"):
+    """
+    Downloads Berkley segmentation dataset and extracts it
+    :param dataset_directory: Path where dataset has to be stored
+    :return: None
+    """
+
     urls = ["http://www.eecs.berkeley.edu/Research/Projects/CS/vision/grouping/BSR/BSR_bsds500.tgz"]
 
     for url in urls:

@@ -1,11 +1,15 @@
 from image_compression.compress import compress, decompress, plot_performance
-from image_compression.downsample_compress_upsample import downsample_compress, decompress_upsample, plot_downsample_compress_upsample_performance
+from image_compression.downsample_compress_upsample import (
+    downsample_compress,
+    decompress_upsample,
+    plot_downsample_compress_upsample_performance,
+)
 from image_compression.utils import plot_comparision
 
 
 # Compress - Decompress
 print("Compressing to H.264 Video")
-compress('./input/pa1_25fps.yuv')
+compress("./input/pa1_25fps.yuv")
 
 print("Decompressing from H.264 Video")
 decompress()
@@ -16,7 +20,7 @@ compress_performance = plot_performance()
 
 # Downsample - Compress - Decompress - Upsample
 print("Downsampling and Compressing to H.264")
-downsample_compress('./input/pa1_25fps.yuv')
+downsample_compress("./input/pa1_25fps.yuv")
 
 print("Decompressing from H.264 and upsampling")
 decompress_upsample()

@@ -4,13 +4,13 @@ from .utils import plot_image_grid
 from .parameters import *
 
 
-def natural_image_pca():
+def natural_image_pca(path="./input/BSR/BSDS500/data/images/train/"):
     """
     Calculates the PCA of natural images and plots the weights
     :return: None
     """
 
-    data = load_image_patches("./input/BSR/BSDS500/data/images/train/")
+    data = load_image_patches(path)
 
     image_pca = PCA(n_components=PCA_COMPONENTS)
     image_pca.fit(data)

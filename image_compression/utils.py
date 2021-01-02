@@ -57,7 +57,7 @@ def luma_mse(first_path, second_path):
     for first_image, second_image in zip(first_path_images, second_path_images):
         MSE += luma_mse_image_pair(first_image, second_image)
 
-    return MSE
+    return MSE / len(first_path_images)
 
 
 def plot_mse(MSE, folder=''):

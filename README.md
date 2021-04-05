@@ -60,7 +60,7 @@ The dataset used in this project will be automatically downloaded to the `input/
 
 ##### Principal components of natural images
 
-To find and plot the principal components of natural images run the following command. Set the parameters for patch extraction in the [parameters](./image_pca/parameters.py) file.This will generate the images and store it in [this](./results/natural_image_pca) folder.
+To find and plot the principal components of natural images run the following command. Set the parameters for patch extraction in the [parameters](./image_pca/parameters.py) file. This will generate the images and store it in [this](./results/natural_image_pca) folder.
 
 ```shell
 python natural_image_pca.py

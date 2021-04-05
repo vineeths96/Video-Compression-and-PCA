@@ -93,7 +93,7 @@ We extract 8 × 8 patches from each of these images and perform Principal Compon
 
 
 
-We find the bit rate swtiching for a given video. We measure the quality in terms of mean squared error in the luminance between the original frame and reconstructed frame. Clearly, we can see that there is a switching between the two methods. The switching bit rate is around 400 Kbps — above which compression-decompression in original dimensions is better and below which downsampling - compression - decompression - upsampling is better.
+We find the bit rate switching for a given video. We measure the quality in terms of mean squared error in the luminance between the original frame and reconstructed frame. Clearly, we can see that there is a switching between the two methods. The switching bit rate is around 400 Kbps — above which compression-decompression in original dimensions is better and below which downsampling - compression - decompression - upsampling is better.
 
 
 
